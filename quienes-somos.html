@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgamer Bar & Arcade</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/quienes-somos.css">
+</head>
+<body>
+
+    <!-- Header, se agrega por jQuery -->
+    <header id="header" class="container-fluid fixed-top py-2 fondo-gris borde-violeta overflow-hidden">
+        <!-- El contenido de este div tiene que ser igual al id del link que queremos marcar como active -->
+        <div id="seccion" class="d-none">quienes-somos</div>
+    </header>
+
+    <!-- Splash de bienvenida -->
+    <section class="container-fluid p-0">
+            <div id="splash-bienvenida" class="imagen-texto">
+
+                <div class="imagen-texto-encabezado-derecha">
+                    <h1>Conocé al equipo</h1>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Info de los creadores -->
+    <section class="container py-5 overflow-hidden">
+       
+        <div class="row row-cols-1 row-cols-md-2 g-3" id="biografias">
+            
+            <!-- ST-30 -->
+            <div id="st-30" class="col">
+                <div class="card fondo-gris-claro borde-violeta p-0 h-100">
+                    <div id="imagen-st-30" class="imagen-texto rounded-top card-img-top"></div>
+                    <div class="card-body p-0">
+                        <h3 class="fondo-gris borde-violeta m-0 py-3">ST 30</h3>
+                        <p class="pt-4 px-5">
+                            ¡Hola! Soy Esteban Gomez, conocido en internet como ST 30. Me incursioné en el mundo de los videojuegos cuando apenas tenía 3 años y mis papás
+                            me regalaron una SNES para navidad. Mi pasión por la gastronomía y el arcade hizo que con Shadow decidiéramos dar el salto para meternos en 
+                            este proyecto. Esperemos que puedan pasar un buen momento y divertirse en Burgamer.
+                        </p>
+                    </div>
+                    <div class="card-footer border-0 pb-3">
+                        <figure class="row align-items-center justify-content-around fondo-gris rounded p-2 mx-4 h-100">
+                            <a class="col" href="https://www.facebook.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/facebook.svg" alt="facebook"></a>
+                            <a class="col" href="https://www.instagram.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/instagram.svg" alt="instagram"></a>
+                            <a class="col" href="https://www.twitter.com/" target="_blank"><img class="redes-sociales-biografias" src="img/quienes-somos/logos/twitter.svg" alt="twitter"></a>
+                            <a class="col" href="https://www.youtube.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/youtube.svg" alt="youtube"></a>
+                        </figure>
+                    </div>
+                </div>      
+            </div>
+        
+            <!-- Shadow -->
+            <div id="shadow" class="col">
+                <div class="card fondo-gris-claro borde-violeta p-0 h-100">
+                    <div id="imagen-shadow" class="imagen-texto rounded-top"></div>
+                    <h3 class="fondo-gris borde-violeta m-0 py-3">Shadow</h3>
+                    <div class="card-body p-0">
+                        <p class="pt-4 px-5">
+                            ¿Cómo andan, gente? Soy Matías, pero todos mis amigos me dicen Shadow. Parecido a ST 30, mi amor por los 
+                            videojuegos arrancó en vísperas de navidad. Estaba celebrando en casa de mis primos cuando Papá Noel (mi tío) 
+                            les regaló la consola DreamCast, de SEGA, con el juego de Sonic Adventure 2 incluído. Bueno, creo que ya se 
+                            imaginan el resto de la historia...
+                        </p>
+                    </div>
+                    <div class="card-footer border-0 pb-3">
+                        <figure class="row align-items-center justify-content-around fondo-gris rounded p-2 mx-4 h-100">
+                            <a class="col" href="https://www.facebook.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/facebook.svg" alt="facebook"></a>
+                            <a class="col" href="https://www.instagram.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/instagram.svg" alt="instagram"></a>
+                            <a class="col" href="https://www.twitter.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/twitter.svg" alt="twitter"></a>
+                            <a class="col" href="https://www.youtube.com/" target="_blank"><img class="redes-sociales-biografias" src= "img/quienes-somos/logos/youtube.svg" alt="youtube"></a>
+                        </figure>
+                    </div> 
+                    </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Sobre Burgamer -->
+    <section class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div id="sobre-burgamer" class="imagen-texto">
+                    <div class="imagen-texto-encabezado-izquierda">
+                        <h2 id="sobrebg">Sobre Burgamer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col texto-en-columnas p-5">
+                <p>Burgamer nació con la idea de dos jóvenes dispuestos a adentrarse en una nueva aventura, en un terreno desconocido pero a 
+                    la vez familiar. Un día, ST 30 y Shadow estaban jugando juntos al Overcooked 2, cuando de repente, al unísono, como
+                    si de una conexión inmediata se tratase, los dos dijeron en voz alta... ¿y si hacemos un bar donde la gente pueda
+                    divertirse con máquinas arcade, y a la vez comer y tomar algo con amigos?
+                </p>
+                <p>
+                    Eso es Burgamer, un lugar donde podés pelearte con tus amigos encarnando a Sub-Zero o Ken, mientras tomás una cerverza
+                    artesanal hecha por nosotros. O también podés pasarte el Metal Slug X mientras comés una pizza con jamón y morrón.
+                    Burgamer ofrece todo eso y mucho más. Burgamer es una experiencia para pasar solo, con amigos o en familia.
+                </p>
+                <p>
+                    Nuestro objetivo como empresa es brindarles a nuestros clientes la mejor experiencia posible, contando con la mejor
+                    calidad de materia prima y máquinas arcade reacondicionadas, para no perder la escencia de aquellos años donde
+                    pasar una tarde con tus amigos jugando al Street Fighter era lo más normal del mundo.
+                </p>
+
+        </div>
+
+    </section>
+
+    <!-- Call to action final -->
+    <section id="call-to-action-final">
+        <div class="container-fluid fondo-violeta py-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-9">
+                    <h2 class="display-4">
+                        ¿Te sumás a la experiencia Burgamer?
+                    </h2>
+                </div>
+            </div>
+            <div class="row py-5 gy-3 justify-content-center">
+                <div class="col-9 col-md-4">
+                    <a href="pedir-online.html" class="boton-grande boton-blanco h-100">Pedí Online</a>
+                </div>
+                <div class="col-9 col-md-4">
+                    <a href="contacto.html#formulario" class="boton-grande boton-blanco">Reservá tu Mesa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El footer se completa con jQuery -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript, Bootstrap, jQuery -->
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

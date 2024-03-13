@@ -1,0 +1,65 @@
+/* Home */
+
+@media(max-width:576px){
+    .modal {
+        text-align: center;
+    }
+}
+
+#splash .carousel-inner{
+    height: 50em;
+}
+
+#carousel-proveedores .carousel-inner {
+    height: 35em;
+}
+
+#splash-01-pedi-online{
+    background-image: url(../img/home/splash-01-pedi-online.jpg);
+    background-position: center;
+    background-size: cover;
+}   
+
+#splash-02-reserva-mesa{
+    background-image: url(../img/home/splash-02-reserva-mesa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.icono-productos{
+    width:12em;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#carousel-proveedores-01-coca-cola {
+    background-image: url(../img/home/proveedores-01-coca-cola.jpg);
+    background-position: center;
+}
+
+#carousel-proveedores-02-heineken {
+    background-image: url(../img/home/proveedores-02-heineken.jpg);
+    background-position: center;
+}
+
+#carousel-proveedores-03-not-co {
+    background-image: url(../img/home/proveedores-03-not-co.jpg);
+    background-position: center;
+}
+
+#carousel-proveedores-04-heinz {
+    background-image: url(../img/home/proveedores-04-heinz.jpg);
+    background-position: center;
+}
+
+#carousel-proveedores-05-mc-cain {
+    background-image: url(../img/home/proveedores-05-mc-cain.jpg);
+    background-position: center;
+}
+
+footer img {
+    width: 75px;
+}

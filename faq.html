@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgamer Bar & Arcade</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/faq.css">
+
+</head>
+<body>
+
+    <!-- Header, se agrega por jQuery -->
+    <header id="header" class="container-fluid fixed-top py-2 fondo-gris borde-violeta overflow-hidden">
+        <!-- El contenido de este div tiene que ser igual al id del link que queremos marcar como active -->
+        <div id="seccion" class="d-none">faq</div>
+    </header>
+
+    <!-- Splash de bienvenida -->
+    <section>
+        <div class="container-fluid p-0">
+            <div id="splash-bienvenida" class="imagen-texto">
+
+                <div class="imagen-texto-encabezado-izquierda">
+                    <h1>¿Tenés una pregunta?</h1>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Inicio Pastillas -->
+    <section id ="pastillas" class="container overflow-hidden pt-5">
+
+            <div class="row row-cols-1 row-cols-sm-2 g-5 pt-5">
+                
+                <!-- Preguntas sobre visitar el restaurante -->
+                <a href="#VR">
+                    <div class ="col h-100">
+                        <div class="card fondo-gris-claro borde-violeta h-100">
+                            <div class="row align-items-center justify-content-around rounded h-100 gy-3 p-3">
+                                    <div class="col-7 col-lg-4 ">
+                                        <img src ="img/faq/visitar.svg" class="icono-categoria">
+                                    </div>
+                                    <div class="col-12 col-lg-8 card-body">
+                                        <h3 class ="text-start">Visitar el restaurante</h3>
+                                        <p>Preguntas relacionadas a reservas, qué productos vendemos, y sobre eventos que realizamos</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Preguntas sobre Pedir Online -->
+                <a href="#PO">
+                    <div class ="col h-100">
+                        <div class="card fondo-gris-claro borde-violeta h-100">
+                            <div class="row align-items-center justify-content-around rounded h-100 gy-3 p-3">
+                                    <div class="col-7 col-lg-4 ">
+                                        <img src ="img/faq/pedir.svg" class="icono-categoria">
+                                    </div>
+                                    <div class="col-12 col-lg-8 card-body">
+                                        <h3 class ="text-start">Pedir online</h3>
+                                        <p>Información sobre cómo hacer tu pedido, qué ofrecemos, y a través de qué plataformas.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+            
+            </div>
+            
+            <div class="row row-cols-1 row-cols-sm-2 g-5 py-5">
+                
+                <!-- Preguntas sobre arcades -->
+                <a href="#SA">
+                    <div class ="col h-100">
+                        <div class="card fondo-gris-claro borde-violeta h-100">
+                            <div class="row align-items-center justify-content-around rounded h-100 gy-3 p-3">
+                                <div class="col-7 col-lg-4 ">
+                                    <img src ="img/faq/arcades.svg" class="icono-categoria">
+                                </div>
+                                <div class="col-12 col-lg-8 card-body">
+                                    <h3 class ="text-start">Sobre los arcade</h3>
+                                    <p class = "testo">Respuestas sobre qué fichines tenemos, cómo podés acceder a ellos, y qué hay que tener en cuenta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+
+                <!-- Preguntas sobre reservas -->
+                <a href="#RE">
+                    <div class ="col h-100">
+                        <div class="card fondo-gris-claro borde-violeta h-100">
+                            <div class="row align-items-center justify-content-around rounded h-100 gy-3 p-3">
+                                <div class="col-7 col-lg-4 ">
+                                    <img src ="img/faq/reservar.svg" class="icono-categoria">
+                                </div>
+                                <div class="col-12 col-lg-8 card-body">
+                                    <h3 class ="text-start">Reservá nuestro espacio</h3>
+                                    <p>Preguntas respecto a cómo podés reservar nuestro espacio para tu cumple, casamiento, o para noche de fichines con amigues.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+
+            </div>
+
+    </section>
+
+
+    <!-- Respuestas sobre el restaurante -->
+    <section class="container py-5">
+        <h2 id="VR" class ="py-5">Visitar el restaurante</h2>
+
+        <div class = "row justify-content-center">
+            
+            <div class="col-10 col-md-3 py-2">
+                <div class="accordion" id="accordionExample"> 
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Puedo ir al lugar sin reserva?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Sí!, para entrar a Burgamer no es necesario hacer una reserva, aunque sí recomendamos
+                            realizar una si se tiene pensado ir con un grupo muy numeroso en un día donde suele estar muy
+                            concurrido, como viernes o sábados por la noche.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-4 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Venden alimentos veganos y aptos para celíacos?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Sí!, en Burgamer sabemos lo que querés, por eso ofrecemos nuestras hamburguesas Not Meat y platos que 
+                            en su mayoría tienen versión apta para celíacos.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Qué días y horarios tienen?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Estamos abiertos de martes a domingos de 19:00hs a 4:00hs
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+
+        </div>
+
+    </section>
+
+    <!-- Respuestas sobre pedir online -->
+    <section class="container py-5">
+        <h2 class ="py-5"><a id="PO">Pedir online</a></h2>
+
+        <div class = "row d-flex justify-content-center">
+            
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample"> 
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Debo registrarme para pedir online?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡No!, los pedidos online se pueden realizar sin registro previo. Solo necesitás escribir 
+                            tu dirección para que te podamos identificar.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-4 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Puedo acercarme al local para retirar mi pedido?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sí, los pedidos online aceptan tanto envío a domicilio como retiro en local.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Aceptan tarjeta de crédito ó débito?
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sí, actualmente aceptamos tarjetas Visa, MasterCard, Cabal y American Express.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+
+        </div>
+
+    </section>
+
+    <!-- Respuestas sobre los arcade -->
+    <section class="container py-5">
+        <h2 class ="py-5"><a id="SA">Sobre los arcade</a></h2>
+
+        <div class = "row d-flex justify-content-center">
+            
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample"> 
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué videojuegos tienen?
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Ofrecemos en total más de 25 juegos distintos, entre ellos el Mortal Kombat 1 y 2, el Street Fighter II,
+                            Sunset Riders, Wonder Boy y Cadillacs and Dinosaurs.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-4 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Tienen el jueguito de Los Simpsons?
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Sí, lo tenemos! Y la versión de 4 jugadores.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Tengo que pagar para jugar?
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡No!, el único requisito para jugar a los juegos es haber tenido una consumisión en el local.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+
+        </div>
+
+    </section>
+    
+    <!-- Respuestas sobre reservas -->
+    <section class="container py-5">
+        <h2 class ="py-5"><a id="RE">Reservá nuestro espacio</a></h2>
+
+        <div class = "row justify-content-center">
+            
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion"> 
+                    <div class="accordion-item">
+                    <h3 class="accordion-header" id="heading10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Debo señar para reservar?
+                        </button>
+                    </h3>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                        <div class="accordion-body">
+                            Sí, para poder realizar una reserva es necesario abonar una seña del 20% del valor total.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-md-4 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading11">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué tipo de eventos se pueden realizar?
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Los eventos pueden ser cumpleaños, tanto para chicos como para adultos, una despedida de soltero,
+                            o incluso un casamiento, ¿por qué no?
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-md-3 py-2 align-center">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo hago para reservar el lugar?
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Las reservas se hacen a través de la página de contacto, o llamando a nuestro número de teléfono 4246-2324.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+
+        </div>
+
+    </section>
+
+    
+    <!-- Call to action final -->
+    <section class="container-fluid fondo-violeta py-5 mt-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-8 col-lg-10">
+                    <h2 class="display-4">
+                        ¿No encontraste tu respuesta?
+                    </h2>
+                </div>
+            </div>
+            <div class="row py-5 justify-content-center">
+                <div class="col-6 col-sm-4">
+                    <a href="contacto.html" class="boton-grande boton-blanco">Contactá con nosotros</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- El footer se completa con jQuery -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript, Bootstrap, jQuery -->
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

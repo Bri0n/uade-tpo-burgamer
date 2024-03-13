@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgamer Bar & Arcade</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+</head>
+
+<body>
+
+    <!-- Header, se agrega por jQuery -->
+    <header id="header" class="container-fluid fixed-top py-2 fondo-gris borde-violeta overflow-hidden">
+        <!-- El contenido de este div tiene que ser igual al id del link que queremos marcar como active -->
+        <div id="seccion" class="d-none">contacto</div>
+    </header>
+
+    <!-- Splash de bienvenida -->
+    <section>
+        <div class="container-fluid p-0">
+            <div id="splash-bienvenida" class="imagen-texto">
+
+                <div class="imagen-texto-encabezado-derecha">
+                    <h1 class="m-0">Tengamos una conversación</h1>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pastillas con opciones de comunicación -->
+    <section class="container pb-5">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 gx-3 gy-5 my-5 py-5">
+            
+            <!-- Vení a visitarnos -->
+            <div id="reserva-mesa" class="col pt-5">
+                <div class="card fondo-gris-claro borde-violeta text-center h-100 pt-5 px-3">
+                    <img class="card-img-top icono-contacto" src="img/contacto/visitar.svg" alt="Icono de locación">
+                    <div class="card-body">
+                        <h4 class="display-6 card-title my-4">Vení a visitarnos</h4>
+                        <p class="card-text">
+                            Podés venir a visitarnos a nuestra sucursar única en <span class="tipografia-violeta">Av. Scallabrini Ortiz 2336</span>, Palermo, sin reserva, de martes a domingo desde las <span class="tipografia-violeta">11:00 hs hasta las 2:00 hs</span> del día siguiente.
+                        </p>
+                        <p>Si querés asegurarte tu lugar, ¡reservá una mesa!</p>
+                    </div>
+                    <div class="card-footer row justify-content-center py-3">
+                        <a href="#formulario" class="col-6 boton-mediano boton-violeta">Reservar mesa</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escribinos -->
+            <div id="reserva-mesa" class="col pt-5">
+                <div class="card fondo-gris-claro borde-violeta text-center h-100 pt-5 px-3">
+                    <img class="card-img-top icono-contacto" src="img/contacto/mandar-mail.svg" alt="Icono de email">
+                    <div class="card-body">
+                        <h4 class="display-6 card-title my-4">Escribinos</h4>
+                        <p class="card-text">
+                            Envianos un correo a <span class="tipografia-violeta">hola@burgamer.com</span>, o contactanos en <a href="#redes" class="tipografia-violeta">nuestras redes</a>.
+                        </p>
+                        <p>
+                            También podés completar el formulario de contacto de esta página para hacernos llegar tu mensaje. 
+                        </p>
+                        <p>¡Nos intersa mucho lo que tenés para decir!</p>
+                    </div>
+                    <div class="card-footer row justify-content-center py-3">
+                        <a href="#" class="col-6 boton-mediano boton-violeta">Ir al formulario</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Llamanos -->
+             <div id="reserva-mesa" class="col pt-5">
+                <div class="card fondo-gris-claro borde-violeta text-center h-100 pt-5 px-3">
+                    <img class="card-img-top icono-contacto" src="img/contacto/llamar.svg" alt="Icono de email">
+                    <div class="card-body">
+                        <h4 class="display-6 card-title my-4">Llamanos</h4>
+                        <p class="card-text">
+                            ¡También tenemos teléfono! Compramos uno lindo para que sirva de decoración, porque no se usa mucho. Nuestro número es <span class="tipografia-violeta">11-5445-2557</span>.
+                        </p>
+                        <p>
+                            Si necesitás una respuesta urgente, este es el mejor medio.
+                        </p>
+                    </div>
+                    <div class="card-footer row justify-content-center py-3">
+                        <a href="tel:+1111111111" class="col-6 boton-mediano boton-violeta">Llamanos</a>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Fin pastillas de comunicación -->
+        </div>
+
+    </section>
+
+    <!-- Mapa -->
+    <section class="container-fluid p-0 fondo-violeta">
+        <div class="row p-0 g-0">
+            
+            <!-- Google Maps -->
+            <!--
+                Normalmente este mapa mostraría el cartelito del local, pero como no existe, 
+                sólo muestra el pin en la dirección que lo pusimos. 
+            -->
+            <div class="col">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6947892037765!2d-58.42069164855832!3d-34.58658856400443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb580394bddb7%3A0xc14f2e4e6c9bc1bf!2sRa%C3%BAl%20Scalabrini%20Ortiz%202336%2C%20C1425DBR%20CABA!5e0!3m2!1ses-419!2sar!4v1669310606794!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="formulario" class="container-fluid fondo-violeta py-5">
+        <div class="row row-cols-1 row-cols-md-2 py-5 gy-5">
+            <div class="col">
+                <h2 class="display-6 mb-5">¿Cómo podemos ayudarte?</h2>
+                <p class="px-5">
+                    Completá el siguiente formulario para recibir una pronta respuesta de nuestro staff. ¡También podés usarlo 
+                    para reservar una mesa!
+                </p>
+                <p class="px-5">
+                    Las solicitudes se procesan en órden de llegada, y manejamos un tiempo de respuesta máximo de 2 horas.
+                </p>
+            </div>
+            <div class="col">
+                <!-- Formulario de contacto -->
+                <form class="needs-validation" novalidate>
+                    <div class="row row-cols-1 row-cols-md-2 mb-3">
+                        <div class="col">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="valid-feedback">
+                                Lindo nombre!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor decinos tu nombre.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" required>
+                            <div class="valid-feedback">
+                                Este correo parece válido.
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, indicanos un correo válido.
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <select class="form-select" aria-label="Tipo de contacto" required>
+                                <option selected disabled value="">Seleccioná el motivo de tu mensaje</option>
+                                <option value="reservar">Reservar una mesa</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="sugerencia">Sugerencia</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                No olvides indicarnos el motivo de tu consulta.
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" required placeholder="" aria-label="With textarea"></textarea>
+                            <div class="valid-feedback">
+                                ¡Alto y claro!
+                            </div>
+                            <div class="invalid-feedback">
+                                ¡No olvides tu mensaje!
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="checkbox" class="form-check-input" id="suscribirse">
+                            <label class="form-check-label" for="suscribirse">
+                                Me gustaría recibir correos con novedades y promociones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="rounded boton-blanco">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- El footer se completa con jQuery -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript, Bootstrap, jQuery -->
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

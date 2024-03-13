@@ -1,0 +1,278 @@
+/* Importar Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+
+
+/* Reglas generales */
+
+@media(max-width:576px){
+    body{
+        font-size: 110%;
+        padding: 4em 0 0; /* Padding para compensar el header fijo */
+    }
+    #volver-arriba{
+        width: 8em;
+
+    }
+}
+
+@media(min-width:576px){
+    body{
+        font-size: 100%;
+        padding: 4.5em 0 0; /* Padding para compensar el header fijo */
+    }
+    #volver-arriba{
+        width: 6em;
+
+    }
+}
+
+@media(min-width:768px){
+    #volver-arriba {
+        width: 6em;
+    }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a, a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+body {
+    color: #FFF;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #1a1a25;
+    min-width: 300px;
+    margin: 0;
+}
+
+
+/* Tipografías */
+
+.tipografia-pixelada{
+    font-family: 'Silkscreen', 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.tipografia-montserrat{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* Colores y decoraciones */
+
+.borde-violeta {
+    border-bottom: 3px solid #92257c;
+}
+
+.fondo-gris{
+    background-color: #1a1a25;
+}
+
+.fondo-gris-transparente{
+    background-color: rgba(26,26,37,0.8);
+}
+
+.fondo-gris-claro{
+    background-color: #282836;
+}
+
+.fondo-violeta {
+    background-color: #92257c;
+}
+
+.tipografia-violeta {
+    color: #92257c;
+}
+
+/* Botones */
+
+.boton-grande, .boton-mediano, .boton-chico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    text-align: center;
+}
+
+.boton-grande{
+    border-radius: 1.5em;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 1em 1.5em;
+    margin:0;
+    font-weight: bold;
+}
+
+.boton-mediano{
+    border-radius: 1em;
+    font-size: 1em;
+    padding: 0.75em 1em;
+}
+
+.boton-chico{
+    border-radius: 0.75em;
+    font-size: 1em;
+    padding: 0.5em 0.75em;
+}
+
+.boton-violeta{
+    color: #FFF;
+    background-color: #92257c;
+    border: 2px solid #92257c;
+}
+
+.boton-violeta:hover{
+    border: 2px solid #92257c;
+    color:#92257c;
+    background-color: #FFF;
+}
+
+.boton-violeta-borde{
+    color: #92257c;
+    border: 2px solid #92257c;
+}
+
+.boton-violeta-borde:hover{
+    color: #FFF;
+    background-color: #92257c;
+}
+
+.boton-blanco{
+    color: #92257c;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+}
+
+.boton-blanco:hover{
+    border: 2px solid #FFF;
+    color: #FFF;
+    background-color: transparent;
+}
+
+/* Header y navegación */
+
+#logo{
+    height: 1.5em;
+    max-height: 100%;
+    width:auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.nav-item a{
+    font-size: 1em;
+    color:#FFF;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active, .nav-item a:hover{
+    color:#92257c;
+}
+
+/*
+    Esto compensa la altura del header fijo. Código sacado de
+    https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors, segunda respuesta
+*/
+
+html {
+    scroll-padding-top: 6em; /* height of sticky header */
+  }
+
+/* Imágenes con texto encima */
+
+.imagen-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-position: center;
+}
+
+    /* Comportamiento responsive para textos que van sobre las imágenes */
+
+@media(max-width:400px){
+    .imagen-texto-cuerpo-derecha, .imagen-texto-cuerpo-izquierda {
+        font-size: 1em;
+    }
+}
+
+@media(min-width:400px){
+    .imagen-texto-cuerpo-derecha, .imagen-texto-cuerpo-izquierda {
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+}
+    
+@media(max-width:768px){
+    .imagen-texto-encabezado-izquierda,
+    .imagen-texto-encabezado-derecha,
+    .imagen-texto-cuerpo-derecha,
+    .imagen-texto-cuerpo-izquierda {
+        width: 90%;
+    }
+    .imagen-texto-encabezado-izquierda, .imagen-texto-encabezado-derecha{
+        padding: 0.5em 1em;
+    }
+    .imagen-texto-cuerpo-derecha, .imagen-texto-cuerpo-izquierda {
+        padding: 1.5em 2em;
+    }
+}
+
+@media(min-width:768px){
+    .imagen-texto-encabezado-izquierda, .imagen-texto-encabezado-derecha {
+        padding: 0.75em 1.5em;
+        width: 50%;
+
+    }
+    
+    .imagen-texto-cuerpo-derecha, .imagen-texto-cuerpo-izquierda {
+        padding: 2em 3em;
+        width: 60%;
+    }
+}
+
+.imagen-texto-encabezado-izquierda,
+.imagen-texto-encabezado-derecha,
+.imagen-texto-cuerpo-derecha,
+.imagen-texto-cuerpo-izquierda {
+    background-color: rgba(26,26,37,1);
+    border-bottom: 3px solid #92257c;
+    margin: 0;
+}
+
+.imagen-texto-encabezado-izquierda h1, .imagen-texto-encabezado-derecha h1,
+.imagen-texto-encabezado-izquierda h2, .imagen-texto-encabezado-derecha h2,
+.imagen-texto-encabezado-izquierda h3, .imagen-texto-encabezado-derecha h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.imagen-texto-encabezado-izquierda, .imagen-texto-cuerpo-izquierda {
+    align-self: flex-start;
+}
+
+.imagen-texto-encabezado-derecha, .imagen-texto-cuerpo-derecha {
+    align-self: flex-end;
+}
+
+#volver-arriba{
+    position: fixed;
+    bottom: 8%;
+    left: 8%;
+    height: auto;
+    transform: translate(50%,0);
+}

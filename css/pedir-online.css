@@ -1,0 +1,58 @@
+@media(max-width:576px){
+    #splash-producto-destacado {
+        height: 50em;
+    }
+
+    #icono-carrito {
+        bottom: 8%;
+        right: 50%;
+        transform: translate(50%,0);
+        width: 8em;
+    }
+
+    #volver-arriba {
+        display: none;
+    }
+
+}
+
+@media(min-width:576px){
+    #splash-producto-destacado {
+        height: 50em;
+    }
+    
+    #icono-carrito {
+        bottom: 8%;
+        right: 50%;
+        transform: translate(50%,0);
+        width: 6em;
+    }
+
+    #volver-arriba {
+        display: none;
+    }
+}
+
+@media(min-width:768px){
+    #icono-carrito {
+        bottom: 8%;
+        right: 8%;
+        transform: translate(-50%,0);
+    }
+
+    #volver-arriba {
+        display: block;
+    }
+
+}
+
+
+#splash-producto-destacado {
+    background-image: url(../img/pedir-online/producto-destacado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#icono-carrito{
+    position: fixed;
+}

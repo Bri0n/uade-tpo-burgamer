@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgamer Bar & Arcade</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- Header, se agrega por jQuery -->
+    <header id="header" class="container-fluid fixed-top py-2 fondo-gris borde-violeta overflow-hidden">
+        <!-- El contenido de este div tiene que ser igual al id del link que queremos marcar como active -->
+        <div id="seccion" class="d-none">inicio</div>
+    </header>
+
+    <!-- Splash / Call to Action -->
+    <section>
+        <div id="splash" class="carousel slide container-fluid p-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#splash" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#splash" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active h-100">
+                        <div id="splash-01-pedi-online" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-derecha">
+                                <h1>La experiencia<br>Burgamer en casa</h1>
+                            </div>
+                            <a class="boton-grande boton-violeta" href="pedir-online.html">Pedí Online</a>
+                        </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div id="splash-02-reserva-mesa" class="imagen-texto">
+                        <div class="imagen-texto-encabezado-izquierda">
+                            <h2>Una noche de<br>sabor y diversión</h2>
+                        </div>
+                        <a class="boton-grande boton-violeta" href="pedir-online.html">Reservá tu Mesa</a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros productos -->
+    <section id="nuestros-productos">
+        <div class="container py-5">
+            <div class="row my-5">
+                <h2 class="display-4 py-5">Nuestros Productos</h2>
+            </div>
+
+            <!-- Inicio de fila con iconos -->
+            <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 mb-5 pb-5 gy-3">
+
+                <!-- Icono de hamburugesa -->
+                <div class="col">
+                    <a href="#modal-hamburguesas" data-bs-toggle="modal" data-bs-target="#modal-hamburguesas">
+                        <img src="img/home/productos-01-hamburguesas.svg" class="icono-productos" alt="Icono de hamburugesa">
+                        <p class="text-center fs-5 tipografia-pixelada my-4 text-break">Hamburguesas</p>
+                    </a>
+                </div>
+
+                <!-- Modal de hamburguesas -->
+                <div class="modal fade" id="modal-hamburguesas" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content fondo-gris">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-12 col-sm-4">
+                                            <!-- Imagen del modal -->
+                                            <img src="img/home/productos-01-hamburguesas.svg" class="icono-productos" alt="Icono de hamburugesa">
+                                        </div>
+                                        <div class="col-6 col-sm">
+                                            <!-- Texto del modal -->
+                                            <div class="row">
+                                                <p class="col tipografia-pixelada fs-3">Hamburguesas</p>
+                                            </div> 
+                                            <div class="row">
+                                                <p class="col">
+                                                    Nuestras hamburguesas están hechas con productos de la mejor calidad.
+                                                    Además, ofrecemos opciones veganas y aptas para celíacos. ¿Qué esperás para pedir?
+                                                </p>
+                                            </div>
+                                            <div class="row row-cols-sm-2 mt-2 gy-3 justify-content-center">
+                                            <!-- Botones del modal -->
+                                                <div class="col-7 col-sm">
+                                                    <a href="#" class="boton-chico boton-violeta-borde" data-bs-dismiss="modal">Cerrar</a>
+                                                </div>
+                                                <div class="col-7 col-sm">
+                                                    <a href="pedir-online.html#hamburguesas" class="boton-chico boton-violeta">Pedir Online</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icono de cerveza -->
+                <div class="col">
+                    <a href="#modal-cerveza" data-bs-toggle="modal" data-bs-target="#modal-cerveza">
+                        <img src="img/home/productos-02-cervezas.svg" class="icono-productos" alt="Icono de cerveza">
+                        <p class="text-center fs-5 tipografia-pixelada my-4">Cervezas</p>
+                    </a>
+                </div>
+
+                <!-- Modal de cerveza -->
+                <div class="modal fade" id="modal-cerveza" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content fondo-gris">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-12 col-sm-4">
+                                            <!-- Imagen del modal -->
+                                            <img src="img/home/productos-02-cervezas.svg" class="icono-productos" alt="Icono de cerveza">
+                                        </div>
+                                        <div class="col-6 col-sm">
+                                            <!-- Texto del modal -->
+                                            <div class="row">
+                                                <p class="col tipografia-pixelada fs-3">Cerveza</p>
+                                            </div> 
+                                            <div class="row">
+                                                <p class="col">
+                                                    Ofrecemos las mejores cervezas del mercado, con opción de pedirlas tiradas o embotelladas. Contamos también 
+                                                    con cervezas importadas.
+                                                    ¿Qué esperás para pedir?
+                                                </p>
+                                            </div>
+                                            <div class="row row-cols-sm-2 mt-2 gy-3 justify-content-center">
+                                                <!-- Botones del modal -->
+                                                <div class="col-7 col-sm">
+                                                    <a href="#" class="boton-chico boton-violeta-borde" data-bs-dismiss="modal">Cerrar</a>
+                                                </div>
+                                                <div class="col-7 col-sm">
+                                                    <a href="pedir-online.html#cervezas" class="boton-chico boton-violeta">Pedir Online</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icono de picadas -->
+                <div class="col">
+                    <a href="#modal-picadas" data-bs-toggle="modal" data-bs-target="#modal-picadas">
+                        <img src="img/home/productos-03-picadas.svg" class="icono-productos" alt="Icono de picadas">
+                        <p class="text-center fs-5 tipografia-pixelada my-4">Picadas</p>
+                    </a>
+                </div>
+
+                <!-- Modal de picadas -->
+                <div class="modal fade" id="modal-picadas" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content fondo-gris">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-12 col-sm-4">
+                                            <!-- Imagen del modal -->
+                                            <img src="img/home/productos-03-picadas.svg" class="icono-productos" alt="Icono de picadas">
+                                        </div>
+                                        <div class="col-6 col-sm">
+                                            <!-- Texto del modal -->
+                                            <div class="row">
+                                                <p class="col tipografia-pixelada fs-3">Picadas</p>
+                                            </div> 
+                                            <div class="row">
+                                                <p class="col">
+                                                    Desde papas a tequeños, pasando por aros de cebolla y nachos, tenemos todo lo que necesitás para tu picada.
+                                                    ¿Qué esperás para pedir?
+                                                </p>
+                                            </div>
+                                            <div class="row row-cols-sm-2 mt-2 gy-3 justify-content-center">
+                                                <!-- Botones del modal -->
+                                                <div class="col-7 col-sm">
+                                                    <a href="#" class="boton-chico boton-violeta-borde" data-bs-dismiss="modal">Cerrar</a>
+                                                </div>
+                                                <div class="col-7 col-sm">
+                                                    <a href="pedir-online.html#picadas" class="boton-chico boton-violeta">Pedir Online</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icono de salsas -->
+                <div class="col">
+                    <a href="#modal-salsas" data-bs-toggle="modal" data-bs-target="#modal-salsas">
+                        <img src="img/home/productos-04-salsas.svg" class="icono-productos" alt="Icono de salsas">
+                        <p class="text-center fs-5 tipografia-pixelada my-4">Salsas</p>
+                    </a>
+                </div>
+
+                <!-- Modal de salsas -->
+                <div class="modal fade" id="modal-salsas" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content fondo-gris">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-12 col-sm-4">
+                                            <!-- Imagen del modal -->
+                                            <img src="img/home/productos-04-salsas.svg" class="icono-productos" alt="Icono de salsas">
+                                        </div>
+                                        <div class="col-6 col-sm">
+                                            <!-- Texto del modal -->
+                                            <div class="row">
+                                                <p class="col tipografia-pixelada fs-3">Salsas</p>
+                                            </div> 
+                                            <div class="row">
+                                                <p class="col">
+                                                    Tenemos salsas de todos los tamaños, colores y sabores.
+                                                    Incluso vendemos salsas importadas directamente de otros países.
+                                                    ¿Qué esperás para pedir?
+                                                </p>
+                                            </div>
+                                            <div class="row row-cols-sm-2 mt-2 gy-3 justify-content-center">
+                                                <!-- Botones del modal -->
+                                                <div class="col-7 col-sm">
+                                                    <a href="#" class="boton-chico boton-violeta-borde" data-bs-dismiss="modal">Cerrar</a>
+                                                </div>
+                                                <div class="col-7 col-sm">
+                                                    <a href="pedir-online.html#salsas" class="boton-chico boton-violeta">Pedir Online</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <!-- Fin de fila con iconos -->
+            </div>
+        
+        </div>
+    <!-- Fin Nuestros Productos -->
+    </section>
+
+
+    <!-- Galería -->
+    <section id="galeria">
+        <div class="contailer-fluid p-0">
+            <!-- Primera fila, fotos del mismo tamaño -->
+            <div class="row g-0 row-cols-sm-2 row-cols-1">
+                <div class="col position-relative">
+                    <img src="img/home/galeria-01.jpg" class="img-fluid" alt="Foto de una hamburugesa doble">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Las mejores hamburguesas</p>
+                </div>
+                <div class="col position-relative">
+                    <img src="img/home/galeria-02.jpg" class="img-fluid" alt="Foto de dos cócteles en una barra">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Cócteles de autor</p>
+                </div>
+            </div>
+
+            <!-- Segunda/Tercera fila (foto vertical que ocupa 2 filas, y 2 de tamaño normal a la derecha)-->
+            <div class="row g-0 row-cols-sm-2 row-cols-1">
+                <div class="col position-relative">
+                    <img src="img/home/galeria-03.jpg" class="img-fluid" alt="Foto de una persona jugando fichines">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Nostalgia y diversión</p>
+                </div>
+                <div class="col">
+                    <div class="row g-0">
+                        <div class="col position-relative">
+                            <img src="img/home/galeria-04.jpg" class="img-fluid" alt="Foto de los controles de una cabina de Pacman">
+                            <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Clásicos de siempre</p>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col position-relative">
+                            <img src="img/home/galeria-05.jpg" class="img-fluid" alt="Foto de los controles de un fichín">
+                            <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Gemas ocultas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Cuarta fila, dos del mismo tamaño -->
+            <div class="row g-0 row-cols-sm-2 row-cols-1">
+                <div class="col position-relative">
+                    <img src="img/home/galeria-06.jpg" class="img-fluid" alt="Foto de una cerveza tirada siendo servida">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Cerveza nacional e importada</p>
+                </div>
+                <div class="col position-relative">
+                    <img src="img/home/galeria-07.jpg" class="img-fluid" alt="Foto de una persona mostrando la hmburguesa que se va a comer">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Gran variedad gastronómica</p>
+                </div>
+            </div>
+
+            <!-- Quinta fila, una sola foto de dos columnas -->
+            <div class="row g-0">
+                <div class="col position-relative">
+                    <img src="img/home/galeria-08.jpg" class="img-fluid" alt="Foto de varios flippers en fila">
+                    <p class="position-absolute w-100 bottom-0 fondo-gris-transparente text-center fs-2 p-4 m-0">Flippers clásicos, novedades, torneos y leaderboards</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Fin galería -->
+    </section>
+
+    <!-- Proveedores -->
+    <section id="nuestros-proveedores">
+        <div class="container py-5">
+            <h2 class="display-4 py-5 ">Nuestros proveedores</h2>
+        
+            <!-- Inicio carousel de proveedores -->
+            <div id="carousel-proveedores" class="carousel slide borde-violeta my-5" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-proveedores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-proveedores" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-proveedores" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-proveedores" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel-proveedores" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-proveedores" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-proveedores" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                
+                <div class="carousel-inner position-relative">
+                    <!-- Slide de Coca-Cola-->
+                    <div class="carousel-item active h-100">
+                        <div id="carousel-proveedores-01-coca-cola" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-derecha">
+                                <h3>Coca-Cola</h3>
+                            </div>
+                            <div class="imagen-texto-cuerpo-izquierda">
+                                <p>
+                                    Coca-Cola es el proveedor número uno de gaseosas en el mundo. Sus sabores son clásicos universales, y son sinónimo de 
+                                    calidad y frescura en todo el mundo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide de Heineken -->
+                    <div class="carousel-item h-100">
+                        <div id="carousel-proveedores-02-heineken" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-izquierda">
+                                <h3>Heineken</h3>
+                            </div>
+                            <div class="imagen-texto-cuerpo-derecha">
+                                <p>
+                                    Un clásico de la mesa argentina, Heineken es la mejor cerveza rubia y la compañera fiel en todos tus momentos. Pedila embotellada o tirada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide de NotCo -->
+                    <div class="carousel-item h-100">
+                        <div id="carousel-proveedores-03-not-co" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-derecha">
+                                <h3>NotCo</h3>
+                            </div>
+                            <div class="imagen-texto-cuerpo-izquierda">
+                                <p>
+                                    La marca líder en productos aptos para veganos, las hamburguesas NotCo te van a enseñar que no hace falta comer animales para disfrutar del mejor sabor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide de Heinz -->
+                    <div class="carousel-item h-100">
+                        <div id="carousel-proveedores-04-heinz" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-izquierda">
+                                <h3>Heinz</h3>
+                            </div>
+                            <div class="imagen-texto-cuerpo-derecha">
+                                <p>
+                                    Famosos en todo el mundo por su sabor distintivo, los condimentos Heinz son el broche de oro para nuestras picadas y hamburguesas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide de Mc Cain -->
+                    <div class="carousel-item h-100">
+                        <div id="carousel-proveedores-05-mc-cain" class="imagen-texto">
+                            <div class="imagen-texto-encabezado-derecha">
+                                <h3>Mc Cain</h3>
+                            </div>
+                            <div class="imagen-texto-cuerpo-izquierda">
+                                <p>
+                                    El nombre de las papas en nuestro país, Mc Cain ofrece los sabores más auténticos y la mayor variedad de texturas del mundo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            <!-- Fin carousel de proveedores -->
+            </div>
+
+        </div>
+    
+    <!-- Fin sección proveedores -->
+    </section>
+
+    <!-- Call to action final -->
+    <section id="call-to-action-final">
+        <div class="container-fluid fondo-violeta py-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-9">
+                    <h2 class="display-4">
+                        ¿Estás listo para la experiencia Burgamer?
+                    </h2>
+                </div>
+            </div>
+            <div class="row py-5 gy-3 justify-content-center">
+                <div class="col-9 col-md-4">
+                    <a href="pedir-online.html" class="boton-grande boton-blanco h-100">Pedí Online</a>
+                </div>
+                <div class="col-9 col-md-4">
+                    <a href="contacto.html#formulario" class="boton-grande boton-blanco">Reservá tu Mesa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El footer se completa con jQuery -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript, Bootstrap, jQuery -->
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

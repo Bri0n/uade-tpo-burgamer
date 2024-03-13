@@ -1,0 +1,99 @@
+@media(max-width:576px){
+    #splash-bienvenida {
+        height: 15em;
+    }
+
+}
+
+@media(min-width:576px){
+    #splash-bienvenida {
+        height: 20em;
+    }
+}
+
+@media(max-width:768px){
+    .texto-en-columnas{
+        column-count: 1;
+        column-gap: 2em;
+    }
+
+}
+
+@media(min-width:768px){
+    .texto-en-columnas{
+        column-count: 2;
+        column-gap: 2em;
+    }
+}
+
+#splash-bienvenida {
+    background-image: url(../img/quienes-somos/splash-bienvenida.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#imagen-st-30{
+    background-image: url(../img/quienes-somos/mario.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 22em;
+}
+
+#imagen-shadow{
+    background-image: url(../img/quienes-somos/shadow.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 22em;
+}
+
+
+#st-30 h3{
+    font-family: 'Audiowide', cursive;
+}
+
+#shadow h3{
+    font-family: 'Rubik Glitch', cursive;
+}
+
+
+#sobre-burgamer {
+    background-image: url(../img/quienes-somos/lugar.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20em;
+}
+
+#lugar{
+    display:flex;
+    flex-direction: column;
+}
+
+#parrafos{
+    padding: 3%;
+    font-size: medium;
+}
+
+.redes-sociales-biografias {
+    width: auto;
+    height: 1.5em;
+    filter: invert(1);
+    display: block;
+    margin: 0 auto;
+}
+
+#logos2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    background-color: #1a1a25;
+    padding:2%;
+}
+
+#logos2 img{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    
+}

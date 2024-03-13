@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgamer Bar & Arcade</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Bootstrap y otras librerías -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/jquery.smartcart/css/smart_cart.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/jquery.owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/pedir-online.css">
+
+</head>
+
+<body>
+
+    <!-- Header, se agrega por jQuery -->
+    <header id="header" class="container-fluid fixed-top py-2 fondo-gris borde-violeta overflow-hidden">
+        <!-- El contenido de este div tiene que ser igual al id del link que queremos marcar como active -->
+        <div id="seccion" class="d-none">pedir-online</div>
+    </header>
+
+    <!-- Producto destacado -->
+    <section>
+        <div class="container-fluid px-0">
+            <div id="splash-producto-destacado" class="imagen-texto">
+
+                <div class="imagen-texto-encabezado-derecha">
+                    <h1 class="m-0">Nueva Ragnarök</h1>
+                </div>
+
+                <div class="imagen-texto-cuerpo-izquierda">
+                    <p class="m-0">
+                        Un verdadero monstruo que va a necesitar de tu furia espartana para ser derrotado. Con doble medallón, 
+                        bacon, queso, cebolla caramelizada y salsa picante, es una hamburguesa digna de los dioses griegos 
+                        y nórdicos.
+                    </p>
+                </div>
+
+                <a id="agregar-producto-destacado" class="boton-grande boton-violeta" href="#producto-destacado">
+                    Agregar a mi pedido
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container py-5 px-0 overflow-hidden">
+
+        <div class="row my-5">
+            <h2 class="display-4 pb-5">Hamburguesas</h2>
+        </div>
+
+        <!-- Hamburguesas -->
+        <div id="hamburguesas" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-3 gx-3">
+
+            <!-- Producto destacado -->
+            <div id="producto-destacado" class="col">
+                <div class="sc-product-item card fondo-gris-claro borde-violeta h-100">
+                    <img class="card-img-top" data-name="product_image" src="img/pedir-online/producto-destacado.jpg" 
+                    alt="Ragnarök">
+                    <div class="card-body">
+                        <h4 class="card-title" data-name="product_name">Ragnarök</h4>
+                        <p class="card-text" data-name="product_desc">
+                            Doble medallón, bacon, queso, cebolla caramelizada y salsa picante.
+                        </p>
+                        <input name="product_price" value="1800" type="hidden" >
+                        <input name="product_id" value="999" type="hidden" >
+                    </div>
+                    <div class="card-footer row">
+                        <p class="col-7 fs-3 tipografia-pixelada m-0">$1800</p>
+                        <a id="boton-compra-producto-destacado" href="#" class="sc-add-to-cart col-5 boton-chico 
+                        boton-violeta">Agregar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acá vienen las hamburguesas -->
+
+        </div>
+
+        <div class="row my-5">
+            <h2 class="display-4 py-5">Cervezas</h2>
+        </div>
+
+        <!-- Cervezas -->
+
+        <div id="cervezas" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-3 gx-3">
+            <!-- Acá vienen las cervezas -->
+        </div>
+
+        <div class="row my-5">
+            <h2 class="display-4 py-5">Picadas</h2>
+        </div>
+
+        <!-- Picadas -->
+        <div id="picadas" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-3 gx-3">
+            <!-- Acá vienen las picadas -->
+        </div>
+
+        <!-- Salsas -->
+        <div class="row my-5">
+            <h2 class="display-4 py-5">Salsas</h2>
+        </div>
+
+        <div id="salsas" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-3 gx-3">
+            <!-- Acá vienen las salsas -->
+        </div>
+
+    </section>
+
+    <!-- Call to action final -->
+    <section class="mt-5">
+        <div class="container-fluid fondo-violeta py-5">
+            <div class="row py-5 justify-content-center">
+                <div class="col-8 col-lg-10">
+                    <h2 class="display-4">
+                        ¿Preferís venir a comer a nuestro restaurante en vez de pedir delivery?
+                    </h2>
+                </div>
+            </div>
+            <div class="row py-5 justify-content-center">
+                <div class="col-6 col-sm-4">
+                    <a href="contacto.html" class="boton-grande boton-blanco">Reservá tu Mesa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón de carrito -->
+        <a id="icono-carrito" data-bs-toggle="offcanvas" href="#carrito" role="button" aria-controls="carrito">
+            <img class="img-fluid" src="img/pedir-online/carrito.svg" alt="Icono de un carrito de compras">
+        </a>
+    <!-- Carrito -->
+    <div class="offcanvas offcanvas-end fondo-gris" tabindex="-1" id="carrito" aria-labelledby="carritoLabel">
+
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title col-11" id="carritoLabel">Mi pedido</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div id="smartcart"></div>
+        </div>
+    </div>
+
+    <!-- El footer se completa con jQuery -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript, Bootstrap, jQuery -->
+    <script src="vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.smartcart/js/jquery.smartCart.js"></script>
+    <script src="vendors/jquery.owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
